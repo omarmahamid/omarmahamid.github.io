@@ -1,0 +1,180 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Omar's Portfolio">
+	<main>
+		<section class="hero">
+			<h1>Omar</h1>
+			<p class="subtitle">Software Developer</p>
+		</section>
+
+		<section class="about" id="about">
+			<h2>About Me</h2>
+			<p>
+				I'm a passionate software developer focused on creating elegant solutions to complex problems.
+				With expertise in web development and a keen eye for detail, I strive to build applications
+				that make a difference.
+			</p>
+		</section>
+
+		<section class="projects" id="projects">
+			<h2>Projects</h2>
+			<div class="project-grid">
+				<article class="project-card">
+					<h3>Project 1</h3>
+					<p>A full-stack web application built with modern technologies.</p>
+					<div class="tech-stack">
+						<span>React</span>
+						<span>Node.js</span>
+						<span>MongoDB</span>
+					</div>
+					<a href="#" class="project-link">View Project →</a>
+				</article>
+
+				<article class="project-card">
+					<h3>Project 2</h3>
+					<p>Mobile-first responsive website with modern design.</p>
+					<div class="tech-stack">
+						<span>Vue.js</span>
+						<span>Tailwind CSS</span>
+					</div>
+					<a href="#" class="project-link">View Project →</a>
+				</article>
+
+				<article class="project-card">
+					<h3>Project 3</h3>
+					<p>API development and integration project.</p>
+					<div class="tech-stack">
+						<span>Express</span>
+						<span>PostgreSQL</span>
+					</div>
+					<a href="#" class="project-link">View Project →</a>
+				</article>
+			</div>
+		</section>
+
+		<section class="contact" id="contact">
+			<h2>Get In Touch</h2>
+			<div class="social-links">
+				<a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a>
+				<a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+				<a href="mailto:your.email@example.com">Email</a>
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: 0 auto;
+		padding: 2rem;
+		max-width: 1200px;
+		color: #ffffff;
+	}
+
+	.hero {
+		text-align: center;
+		padding: 4rem 0;
+	}
+
+	h1 {
+		font-size: 3.5rem;
+		font-weight: 700;
+		margin: 0;
+		background: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.subtitle {
+		font-size: 1.5rem;
+		color: rgb(var(--accent-light));
+		margin-top: 0.5rem;
+	}
+
+	section {
+		margin: 4rem 0;
+	}
+
+	h2 {
+		font-size: 2rem;
+		margin-bottom: 2rem;
+		color: rgb(var(--accent-light));
+	}
+
+	.project-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+
+	.project-card {
+		background: rgba(255, 255, 255, 0.05);
+		padding: 1.5rem;
+		border-radius: 8px;
+		border: 1px solid rgba(var(--accent-light), 0.2);
+		transition: transform 0.2s ease;
+	}
+
+	.project-card:hover {
+		transform: translateY(-5px);
+	}
+
+	.tech-stack {
+		margin: 1rem 0;
+		display: flex;
+		gap: 0.5rem;
+		flex-wrap: wrap;
+	}
+
+	.tech-stack span {
+		background: rgba(var(--accent), 0.1);
+		color: rgb(var(--accent-light));
+		padding: 0.25rem 0.75rem;
+		border-radius: 15px;
+		font-size: 0.875rem;
+	}
+
+	.project-link {
+		display: inline-block;
+		color: rgb(var(--accent-light));
+		text-decoration: none;
+		margin-top: 1rem;
+		transition: color 0.2s ease;
+	}
+
+	.project-link:hover {
+		color: rgb(var(--accent));
+	}
+
+	.social-links {
+		display: flex;
+		gap: 2rem;
+		justify-content: center;
+	}
+
+	.social-links a {
+		color: rgb(var(--accent-light));
+		text-decoration: none;
+		transition: color 0.2s ease;
+	}
+
+	.social-links a:hover {
+		color: rgb(var(--accent));
+	}
+
+	@media (max-width: 768px) {
+		h1 {
+			font-size: 2.5rem;
+		}
+
+		.subtitle {
+			font-size: 1.25rem;
+		}
+
+		section {
+			margin: 2rem 0;
+		}
+	}
+</style>
