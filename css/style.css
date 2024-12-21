@@ -1,0 +1,94 @@
+:root {
+    --accent: 136, 58, 234;
+    --accent-light: 224, 204, 250;
+    --accent-dark: 49, 10, 101;
+    --accent-gradient: linear-gradient(
+        45deg,
+        rgb(var(--accent)),
+        rgb(var(--accent-light)) 30%,
+        white 60%
+    );
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: system-ui, sans-serif;
+    background: #13151a;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+}
+
+main {
+    margin: 0 auto;
+    padding: 2rem;
+    max-width: 1200px;
+    color: #ffffff;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 0;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: rgb(var(--accent-light));
+    margin-top: 0.5rem;
+}
+
+section {
+    margin: 4rem 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: rgb(var(--accent-light));
+}
+
+.social-links {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.social-links a {
+    color: rgb(var(--accent-light));
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+    color: rgb(var(--accent));
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.25rem;
+    }
+
+    section {
+        margin: 2rem 0;
+    }
+}

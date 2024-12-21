@@ -1,0 +1,44 @@
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid rgba(var(--accent-light), 0.2);
+    transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.tech-stack {
+    margin: 1rem 0;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.tech-stack span {
+    background: rgba(var(--accent), 0.1);
+    color: rgb(var(--accent-light));
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.875rem;
+}
+
+.project-link {
+    display: inline-block;
+    color: rgb(var(--accent-light));
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: color 0.2s ease;
+}
+
+.project-link:hover {
+    color: rgb(var(--accent));
+}
