@@ -1,1 +1,1 @@
-[# Omar](https://omarmahamid.github.io/)
+https://omarmahamid.github.io/
